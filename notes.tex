@@ -1,0 +1,446 @@
+% special characters
+\documentclass{article} %\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{verbatim}
+\usepackage{graphicx}
+
+% 10
+% \usepackage[T1]{fontenc}
+% \usepackage{tgchorus}
+\begin{document}
+1
+
+You can type: \} \{ \# \^ \_ \$ \% \& 
+% really special special characters
+\~{a} $\sim$ \textbackslash $\backslash$\\
+
+According to ``Newton's Method", you can approximate the roots 
+of a diferentiable function $f(x)$ starting from an initial point $x_0$
+and then setting
+\[x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)},\quad\text{ for }n\ge0.\]\\
+
+2
+
+%LaTeX provides the \verb for printing verbatim text, including special characters. Anything one the same line between the character immediately following \verb and the next occurrence of that character is printed without any special processing:
+
+
+
+\verb|I can p#"\begin{ _^&1rintp98    23lkjb% anything I like be s|
+
+\verb@I can p#"rintp98    23lkjb%@ anything I like be @s\\
+
+3
+
+%The \verb only works for short pieces of text that are on the same line. For longer tracts of verbatim code use the verbatim environment from the verbatim package.
+
+
+\begin{verbatim}
+	\verb|I can p#"\begin{ _^&1rintp98    23lkjb% anything I like be s|
+		
+		\verb@I can p#"rintp98    23lkjb%@ anything I like be @s
+\end{verbatim}\\
+
+4
+
+% The length \parindent controls the indentation of the first line of each paragraph. Setting \parskip=5mm would indent the first line of every paragraph by 5mm.  Setting \paraskip=0mm disables  paragraph indentation.
+
+% The \large command increases the font size 
+
+% Use \textbf{...} to make text bold
+
+% Use \textit{...} for italics
+
+% Use \textsf{...} for sans serif font
+
+\parindent=0mm % turn off indentation at start of paragraph
+\textsf{\large Understanding the greenhouse effect}
+
+The \textbf{greenhouse effect} is the warming that happens when 
+\textit{certain gases in Earth's atmosphere trap heat}. These 
+gases let in light but keep heat from escaping, like the glass 
+walls of a greenhouse, hence the name.\\
+
+5
+
+Normal text: \textrm{text in roman serif}\\  
+Italics: \textit{this is in italics}\\
+Typewriter font: \texttt{this is in a typewriter font}\\
+Bold: \textbf{this is emboldened}\\
+Medium bold: \textmd{this is slightly emboldened}\\
+Sans serif: \textsf{this is san serifed}\\
+Slanted: \textsl{slanted text!}\\
+Small caps: \textsc{Small caps!}\\
+Emphasis: \emph{I'm important}\\
+Upright text: \textup{Upright text}\\
+
+
+\textit{Note every \emph{opening brace} must have a matching
+\emph{closing brace}}.
+
+\emph{This it is \emph{really important} because \LaTeX\ 
+gives an error whenever the braces do not match}
+
+\textit{This is }\emph{in italics}.\\
+
+6
+
+\begin{center}\bfseries\itshape
+This is a wonderfully centered line
+\end{center}
+
+\begin{sffamily}
+This is a slightly darker font!
+\end{sffamily}
+
+\begin{itshape}
+This is slightly lighter font!
+\end{itshape}
+
+
+\includegraphics{C:/Users/palac/Pictures/fonts.png}\\
+
+7
+
+{\it This is italics {\bf and if we are lucky this is bold italics!}}
+
+{\bf This is bold {\it and if we are lucky this is bold italics!}}
+
+\bigskip
+
+\textit{This is italics \textbf{and if we are lucky this is bold italics!}}
+
+\textbf{This is bold \textit{and if we are lucky this is bold italics!}}
+
+\bigskip
+
+{\itshape This is italics {\bfseries and if we are lucky this is bold italics!}}
+
+{\bfseries This is bold {\itshape and if we are lucky this is bold italics!}}\\
+
+8
+
+% changing size
+
+{\tiny this is really tiny}\\
+{\scriptsize subscripts are this size}\\
+{\footnotesize are this big}\\
+{\small this is small text}\\
+{\normalsize this is the default size}\\
+{\large slightly larger text}\\
+{\Large even larger text}\\
+{\LARGE getting big now}\\
+{\huge now we are onto huge }\\
+{\Huge completely hugemongous }\\
+
+9
+
+Compare $a_{b_c}$ with $a{\scriptstyle b}{\scriptscriptstyle c}$\\
+
+10 
+
+Compare $a_{b_c}$ with $a{\scriptstyle b}{\scriptscriptstyle c}$\\
+
+11
+
+
+	
+\begin{center}
+\Large Impacts of 1.5ºC global warming on\\
+natural and human systems
+\end{center}
+
+\noindent
+\textbf{Human-induced global warming has already caused 
+multiple observed changes in the climate system}\\
+
+\textit{(high confidence)}. Changes include increases in both
+land and ocean temperatures, as well as more frequent heatwaves
+in mostland regions \textit{(high confidence)}. There is also\\
+ 
+\textit{(high confidence)} global warming has resulted in an 
+increase in the frequency and duration of marine heatwaves. Further,
+there is substantial evidence that human-induced global warming has 
+led to an increase in the frequency, intensity and/or amount of heavy
+precipitation events at the global scale \textit{(medium confidence)},
+as well as an increased risk of drought in the Mediterranean region\\
+
+\textit{(medium confidence)}.
+
+{\footnotesize \{3.3.1, 3.3.2, 3.3.3, 3.3.4, Box 3.4\} }\\
+
+12
+
+  % text is justified by default
+The Earth's climate has changed throughout history. Just in the last 650,000
+years there have been seven cycles of glacial advance and retreat, with the
+abrupt end of the last ice age about 11,700 years ago marking the beginning of
+the modern climate era — and of human civilization. Most of these climate
+changes are attributed to very small variations in Earth’s orbit that change
+the amount of solar energy our planet receives.
+
+\begin{flushright}
+	The current warming trend is of particular significance because most of it is
+	extremely likely (greater than 95 percent probability) to be the result of
+	human activity since the mid-20th century and proceeding at a rate that is
+	unprecedented over decades to millennia.
+\end{flushright}
+
+\begin{flushleft}
+	Earth-orbiting satellites and other technological advances have enabled
+	scientists to see the big picture, collecting many different types of
+	information about our planet and its climate on a global scale. This body of
+	data, collected over many years, reveals the signals of a changing climate.
+\end{flushleft}
+
+\begin{center}
+	The heat-trapping nature of carbon dioxide and other gases was demonstrated in
+	the mid-19th century. Their ability to affect the transfer of infrared energy
+	through the atmosphere is the scientific basis of many instruments flown by
+	NASA. There is no question that increased levels of greenhouse gases must cause
+	the Earth to warm in response.i
+\end{center}
+
+% To change the justification of large blocks of text use the \raggedleft, \raggedright and \centering commands. (\usrpackage{radded2e})
+
+13
+
+% In particular, you can change the (default) paragraph indentation for your entire document to 2.5cm by adding \parindent=2.5cm (or \parindent=25mm), to the preamble of your document.
+
+\noindent This sentence is not indented 
+
+\parindent=20mm This sentence is indented by 2cm.\\
+
+14
+
+\vspace*{\fill} % center text 
+
+I don't want your hope. I want you to panic. 
+
+\medskip I want you to feel the fear I do. Every day. 
+
+\bigskip And want you to act. 
+I want you to behave like our house is on fire.
+
+\vspace{19pt} Because it is.  
+
+\vspace{16mm}
+
+\hfil\textit{Greta Thunberg}\hfil
+
+\vspace*{\fill}
+
+15
+\parindent=0mm \parskip=2mm
+
+
+\textbf{Text spacing}
+
+A\,B (a ``thin space'') \verb|A\,B|
+
+A\ B (normal space) \verb|A\ B|
+
+A  B (normal space) \verb|A B|
+
+A\space B (normal space) \verb|A\space B|
+
+A~B       (non-breaking normal space) \verb|A~B|
+
+A\enspace B (half a quad) \verb|A\enspace B|
+
+A\quad B (quad space) \verb|A\quad B|
+
+A\qquad B (double quad space) \verb|A\qquad B|
+
+A\hspace{20mm}B (20mm hspace) \verb|A\hspace{20mm}B|
+
+\textit{H-space can be negative:}
+
+A\hspace*{-10mm}B  (negativve hspace) \verb|A\hspace{-10mm}B|
+
+\bigskip\textbf{Math mode:}
+
+$A\!B$ (negative thin ``mu skip'') \verb|$A\!B$|
+
+$A\>B$ (a ``med mu skip'')  \verb|$A\>B$|
+
+$A\;B$ (a ``thick mu skip'') \verb|$A\;B$|
+
+[The \verb|\verb| command is a useful \LaTeX\ command for displaying 
+``verbatim text''. The special meaning of characters is disabled 
+in between the two pipe symbols.]\\
+
+16
+
+Left \hfill right
+
+Left \hfill middle \hfill right
+
+Left \dotfill right
+
+Left \dotfill middle \dotfill right
+
+Left \hrulefill right
+
+Left \hrulefill middle \hrulefill right
+
+\centerline{A centred line}
+
+\hfil A centred line\hfil
+
+\noindent\hfil AA centred line\hfil
+
+\begin{center}A centred line\end{center}
+
+17
+
+% set the line space use setspace package
+
+% \usepackage{setspace}
+
+18
+
+% minipage
+
+  \begin{center}
+	\begin{minipage}[t][20mm]{0.24\textwidth}
+		tfirst\\ second\\ third
+	\end{minipage} 
+
+	\begin{minipage}[c][20mm]{0.24\textwidth}
+		cfirst\\ second\\ third
+	\end{minipage} 
+
+	\begin{minipage}[b][20mm]{0.24\textwidth}
+		bfirst\\ second\\ third
+	\end{minipage} 
+
+	\begin{minipage}[s][20mm]{0.24\textwidth}
+		sfirst\\ second\\ third
+	\end{minipage}   
+\end{center}
+
+% t	Position the minipage at the top of the allowed space
+% c	Centre the minipage in the allowed space
+% b	Position the minipage at the bottom of the allowed space
+% s	Vertically stretch the contents of the box over ther allowed space
+
+% \begin{minipage}[position][height][inner position]{width}
+% contents
+% \end{minipage}
+
+19
+
+% enumerated list and itemised list
+	
+\begin{enumerate}
+\item\textbf{Food threat}
+Climate change is already taking a sizeable chunk out of global food
+supply and it is going to get worse.
+
+\end{enumerate}
+
+\begin{itemize}
+\item The concentration of GHGs in the earth’s atmosphere is directly 
+linked to the average global temperature on Earth
+\item[$\diamond$] Gosh!
+
+\end{itemize}
+
+20 
+
+% headings
+
+\begin{description}
+	\item[United Nations Framework Convention on Climate Change]\hfil\newline
+	The UN family is at the forefront of the effort to save our 
+	
+	\item[Kyoto Protocol]
+	
+	By 1995, countries launched negotiations to strengthen the global
+	
+	\item[Paris Agreement]
+	At the 21st Conference of the Parties in Paris in 2015, Parties to
+
+\end{description}
+
+21
+
+% tables 
+
+  \begin{tabular}{lllll}
+	a1 & a2 & a3 & a4 & a5 \\
+	b1 & b2 & b3 & b4 & b5 \\
+	c1 & c2 & c3 & c4 & c5 \\
+	d1 & d2 & d3 & d4 & d5 \\
+\end{tabular}
+
+\includegraphics{C:/Users/palac/Pictures/column_type.png}
+
+% hline and cline
+
+	
+	\newcommand\dummytext{Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ut purus elit, vestibulum ut, placerat ac, adipiscing vitae, felis. Curabitur dictum gravida mauris. Nam arcu libero, nonummy eget, consectetuer id, vulputate a, magna.}
+	
+\begin{tabular}{l|c|rp{0.7\textwidth}}\hline
+Left & Centred & Right & Paragraph \\ \hline
+X   & X   & X   & X          \\
+X   & X   & X   & \dummytext \\
+X   & X   & X   & \dummytext \\  \cline{1-1}\cline{3-4}
+\hline
+\end{tabular}
+
+% multicolumn
+
+\begin{tabular}{l|c|rp{0.7\textwidth}}\hline
+	Left & Centred & Right & Paragraph \\ \hline
+	X   & \multicolumn3{|r|}{X    X}   \\\cline{3-4}
+	\multicolumn{1}{r}{X}& X   & X   & \dummytext \\ \cline{1-1}\cline{3-4}
+	X   & \multicolumn2{c}{XYX}   & \dummytext \\
+	\hline
+\end{tabular}
+
+22
+
+% footnote
+
+Here is a some example text with a footnote\footnote{The first footnote!}
+
+Here I refer back to the first footenote\footnotemark[1].
+
+% one can change the footnote symbol with \usepackage[perpage,para,symbol*]{footmisc}
+
+23
+
+% for longer quotations
+% to show indentation \usepackage[showframe]{geometry}
+
+  \begin{quote}
+	By the time we see that climate change is really bad,
+	your ability to fix it is extremely limited... The 
+	carbon gets up there, but the heating effect is delayed. 
+	And then the effect of that heat on the species and ecosystem 
+	is delayed. That means that even when you turn virtuous, 
+	things are actually going to get worse for quite a while.
+	\flushright\textit{Bill Gates}
+\end{quote}
+
+  \begin{quotation}
+	We are the first generation to be able to end poverty, and the last generation
+	that can take steps to avoid the worse impacts of climate change.
+	
+	Future generations will judge us harshly if we fail to uphold our moral and
+	historical responsibilities.
+	
+	\hfill Ban Ki-moon, Secretary-General, United Nations
+\end{quotation}
+
+24 
+
+% other quotes \usepackage{csquotes}
+
+\end{document}
+
+
+
+
+
